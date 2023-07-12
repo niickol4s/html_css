@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Roboto&display=swap');
+
+:root {
+    --bkgColor: rgb(245,248,255);
+    --htxColor: rgb(255, 255, 255);
+    --hdrColor: rgb(7,48,66);
+    --hvrColor: rgb(61,219,133);
+    --asdColor: rgb(131, 225, 173);
+    --fntColor: rgb(58, 58, 58);
+
+    --dftFont: Arial, Helvetica, sans-serif;
+    --ttlFont: 'Roboto', sans-serif;
+    --txtFont: 'Asap', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--bkgColor);
+    font-family: var(--dftFont);
+}
+
+header {
+    background-color: var(--hdrColor);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+header > div {
+    color: var(--htxColor);
+    font-family: var(--ttlFont);
+    margin-bottom: 20px;
+}
+
+header > div > p {
+    color: var(--htxColor);
+    margin-top: 20px;
+}
+
+nav {
+    background-color: var(--hdrColor);
+    padding: 10px;
+}
+
+nav > a {
+    color: var(--htxColor);
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav > a:hover {
+    color: var(--hvrColor);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+img.short {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+article > h1, h2, h3, p {
+    color: var(--fntColor);
+}
+
+article > p {
+    font-family: var(--txtFont);
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1em;
+}
+
+article a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--hvrColor);
+}
+
+aside {
+    background-color: var(--asdColor);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+aside > h3 {
+    background-color: var(--hdrColor);
+    color: var(--htxColor);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+aside p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1em;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+aside a {
+    color: var(--htxColor);
+}
+
+footer {
+    background-color: var(--hdrColor);
+    font-family: var(--txtFont);
+    color: var(--htxColor);
+    text-align: center;
+    padding: 10px;
+}
