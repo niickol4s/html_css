@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=PT+Sans&display=swap');
+
+:root {
+    --hdrColor1: rgb(255, 191, 221);
+    --hdrColor2: rgb(179, 204, 255);
+    --sColor1: rgba(255, 191, 221, 0.800);
+    --sColor2: rgba(179, 204, 255, 0.800);
+    --thdColor: rgb(58,58,58);
+    --bkgColor: rgb(245,248,255);
+    --lnkColor: rgb(26, 115, 232);
+    --thrColor: rgb(245, 83, 159);
+
+    --hdrText: 'Marck Script', serif;
+    --pText: 'PT Sans', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--bkgColor);
+}
+
+header {
+    padding: 50px;
+    background-image: linear-gradient(90deg, var(--hdrColor1), var(--hdrColor2));
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: var(--hdrText);
+    color: var(--thdColor);
+}
+
+p, a, footer {
+    font-family: var(--pText);
+    color: var(--thdColor);
+    text-decoration: none;
+}
+
+a {
+    color: var(--lnkColor);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: var(--thrColor);
+}
+
+nav {
+    background-image: linear-gradient(90deg, var(--hdrColor1), var(--hdrColor2));
+    padding: 30px;
+}
+
+nav > a {
+    padding: 10px;
+}
+
+section {
+    padding-left: 30px;
+}
+
+section.normal > p {
+    padding-bottom: 1em;
+}
+
+section.normal, section.imagem {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+}
+
+section#info {
+    padding-top: 10vh;
+}
+
+section.imagem {
+    background-color: var(--thdColor);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    width: 200px;
+    background-image: linear-gradient(90deg, var(--sColor1), var(--sColor2));
+    border-radius: 5px;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+footer {
+    padding: 30px;
+    background-image: linear-gradient(90deg, var(--hdrColor1), var(--hdrColor2));
+    text-align: center;
+}
