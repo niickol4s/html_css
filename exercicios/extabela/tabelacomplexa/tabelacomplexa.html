@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilotbcomplexa/tbcomplexa.css">
+    <title>Tabela Complexa</title>
+</head>
+<body>
+    <h1>Estrutura de Tabela Complexa</h1>
+
+    <table>
+        <caption>Populações das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="population">44 420 459</td>
+                
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="population">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="population">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="population">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="population">11 443 208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="population">10 880 506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="population">9 058 155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="population">8 791 688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="population">8 116 132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="population">7 609 601</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="population">7 055 228</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="population">6 775 152</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="population">3 974 495</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="population"><strong>81 013 701</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <table>
+        <caption>Filmes Favoritos por Gênero</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Evil Dead</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Velozes e Furiosos</td>
+                <td>Jurassic Park</td>
+                <td>Elysium</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Laranja Mecânica</td>
+                <td>Ilha do Medo</td>
+                <td>Psicose</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendoça</td>
+                <td>Um Estrano no Ninho</td>
+                <td>Amnésia</td>
+                <td>Quero Ser John Malkovich</td>
+            </tr>
+            <tr>
+                <td>Daniel Loureço</td>
+                <td>Top Gun</td>
+                <td>Sr. & Sra. Smith</td>
+                <td>Tubarão</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars</td>
+                <td>Vingança Entre Assassinos</td>
+                <td>O Bebê de Rosemary</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>18</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
