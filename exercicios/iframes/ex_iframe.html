@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body {
+            background-color: rgb(240, 248, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            display: block;
+            margin: auto;
+            width: 700px;
+            height: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(95, 153, 219);
+            transition: 0.5s;
+        }
+
+        a:hover {
+            color: rgb(52, 128, 214);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Estudo de iframes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Animi repellat aliquid cupiditate minima earum, <br>
+            harum esse laboriosam, sapiente repudiandae cum quae natus
+            beatae dicta inventore omnis ratione pariatur ipsum culpa?
+        </p>
+
+        <h2>Escolha uma opção para navegar no iframe</h2>
+        <ul>
+            <li><a href="../ex02_desafio_site_android/android.html" target="iframe">Projeto Site Android</a></li>
+            <li><a href="../ex03_desafio_site_cordel/index.html" target="iframe">Projeto Site Ciranda Virtual</a></li>
+        </ul>
+        <h2>Iframe com o projeto escolhido:</h2>
+        <iframe src="..//ex02_desafio_site_android/android.html" frameborder="0" name="iframe">
+            <a href="../ex02_desafio_site_android/android.html">Projeto Site Android</a>
+            <a href="../ex03_desafio_site_cordel/index.html">Projeto Site Ciranda Virtual</a>
+        </iframe>
+    </main>
+</body>
+</html>
