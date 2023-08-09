@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Formulário Para Entrada e Saída</title>
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <form action="calculo.py" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Cálculo</legend>
+            <label for="inumber1">Valor:</label>
+            <input type="number" name="number1" id="inumber1" required min="0" max="50"
+            oninput="iresult.innerHTML = Number(inumber1.value) + Number(inumber2.value)">
+            <br>
+            <label for="inumber2">Valor:</label>
+            <input type="number" name="number2" id="inumber2" required min="0" max="50"
+            oninput="iresult.innerHTML = Number(inumber1.value) + Number(inumber2.value)">
+            <br>
+            <label for="iresult">Resultado:</label>
+            <output name="result" id="iresult">0</output> <!--Output usado apenas para mostrar infos. na tela-->
+            <br>
+            <input type="submit" value="Calcular">
+            <input type="submit" value="Limpar">
+        </fieldset>
+    </form>
+</body>
+</html>

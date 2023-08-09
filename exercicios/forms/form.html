@@ -33,6 +33,49 @@
             <label for="i-date">Fechamento de nota</label>
             <input type="date" name="date" id="i-date" required>
             <br>
+            <label for="i-tel">Telefone</label>
+            <input type="tel" placeholder="(xx)xxxx-xxxx" name="tel" id="i-tel" 
+            pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$">
+            <br>
+            <br>
+            <input type="checkbox" name="math" id="i-math"> <label for="i-math">Matemática</label> <br>
+            <input type="checkbox" name="bio" id="i-bio"> <label for="i-bio">Biologia</label> <br>
+            <input type="checkbox" name="chemical" id="i-chemical"> <label for="i-chemical">Química</label> <br>
+            <br>
+            <input type="radio" name="sex" id="i-sex-mas" value="Mas"> <label for="i-sex-mas">Masculino</label> <br>
+            <input type="radio" name="sex" id="i-sex-fem" value="Fem"> <label for="i-sex-fem">Feminino</label> <br>
+            <br>
+            <label for="i-color">Cor</label>
+            <input type="color" name="color" id="i-color">
+            <br>
+            <label for="irange">Tamanho</label>
+            <input type="range" name="range" id="irange" min="1" max="10" 
+            oninput="vle.innerHTML = Number(irange.value)">
+            <output id="vle">5</output>
+            <br>
+            <label for="i-file">Upload Foto</label>
+            <input type="file" name="file" id="i-file"> <!--Ao usar input:file, o method do form precisa ser post para
+            ser compatível com arquivos com mais de 3000 bytes-->
+            <br>
+            <label for="i-uf">UF</label>
+            <select name="uf" id="i-uf">
+                <optgroup>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="CE">CE</option>
+                    <option value="PE">PE</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="i-prof">Profissão</label>
+            <input type="text" name="prof" id="i-prof" list="lst-prof">
+            <datalist id="lst-prof">
+                <option value="ADM">Administrador</option>
+                <option value="ENG">Engenheiro</option>
+                <option value="DSG">Designer</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+            <br>
             <label for="i-email">E-mail</label>
             <input type="email" name="email" id="i-email" required autocomplete="email">
             <br>
