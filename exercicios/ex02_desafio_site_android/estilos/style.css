@@ -43,12 +43,16 @@ header > div > p {
     margin-top: 20px;
 }
 
+span.material-symbols-outlined {display: none;}
+
 nav {
     background-color: var(--hdrColor);
     padding: 10px;
+    text-align: center;
 }
 
 nav > a {
+    display: inline;
     color: var(--htxColor);
     padding: 10px;
     text-decoration: none;
@@ -149,4 +153,19 @@ footer {
     color: var(--htxColor);
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 420px) {
+
+    nav > a {
+        display: block;
+    }
+
+    span.material-symbols-outlined {
+        display: block;
+        text-align: center;
+        background-color: var(--hdrColor);
+        color: var(--htxColor);
+        cursor: pointer;
+    }
 }
