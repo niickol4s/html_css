@@ -43,7 +43,7 @@ header > div > p {
     margin-top: 20px;
 }
 
-span.material-symbols-outlined {display: none;}
+span#icon-menu {display: none;}
 
 nav {
     background-color: var(--hdrColor);
@@ -69,6 +69,23 @@ main {
     margin: auto;
     padding: 20px;
 }
+
+
+ul#internal-link {
+    list-style: none;
+    margin: 15px 0px;
+}
+
+ul#internal-link > li {line-height: 1.6em;}
+
+ul#internal-link  a {
+    font-family: var(--txtFont);
+    text-decoration: none;
+    color: var(--hdrColor);
+    transition: 0.3s;
+}
+
+ul#internal-link a:hover {color: var(--hvrColor);}
 
 img {
     width: 100%;
@@ -147,6 +164,13 @@ aside a {
     color: var(--htxColor);
 }
 
+abbr {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+abbr:hover {color: var(--hdrColor);}
+
 footer {
     background-color: var(--hdrColor);
     font-family: var(--txtFont);
@@ -161,7 +185,7 @@ footer {
         display: block;
     }
 
-    span.material-symbols-outlined {
+    span#icon-menu {
         display: block;
         text-align: center;
         background-color: var(--hdrColor);
